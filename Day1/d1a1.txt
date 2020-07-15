@@ -1,0 +1,55 @@
+Assignment 1 (Day 1)
+  
+Various Console Functions with Examples:
+
+1) console.log()- Outputs a message to the console. We can put any type be it a string, array, object, boolean etc.
+Eg: console.log('Hello letsupgrader!');
+       console.log(24);
+
+2) console.time()- Starts a timer. It tracks how long an operation takes. It tells the amount of time spend by a block or a function.
+Eg: console.time('abc');
+       let func= function()
+       {
+	console.log('Function is running');
+       }
+       func();
+
+3)console.timeEnd()- It stops the timer that was previously started by console.time()
+Eg: console.time('abc');
+       let func= function()
+       {
+	console.log('Function is running');
+       }
+       func();
+       console.timeEnd('abc');
+
+4) console.warn()- Outputs a warning message to the console.
+Eg: console.warn('This is a warning message');
+
+5) console.table()- This method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table.
+Eg: console.table({'a':1, 'b':2});
+
+6) console.info()- Outputs an informational message to the console.
+Eg: console.info();
+
+7) console.clear()- Clears the console.
+Eg: console.clear();
+
+8) console.count()- This method is used to count the number that the function hit by this counting method.
+Eg: for(let i=0; i<5; i++)
+       {
+ 	console.count(i);
+       }
+
+9) console.error()- Outputs an error message to the console.
+Eg: console.error('This is a simple error');
+
+10) console.group()-
+      console.groupEnd()-
+      These methods of the console object allows us to group contents in a separate block, which will be indented.
+Eg: console.group('ABC');
+      console.warn('Warning!');
+      console.error('Error');
+      console.log('xyz');
+      console.groupEnd('ABC');
+      console.log('new section');
