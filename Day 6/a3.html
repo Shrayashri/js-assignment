@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> Question 3 </title>
+</head>
+<body>
+<h1 id="title"></h1>
+<button id="dark">Switch to dark mode</button>
+<h4 id="time"></h4>
+<script>
+const title=document.getElementById('title');
+console.log(title);
+const name=prompt("Enter your name: ");
+title.innerText+=`Welcome ${name} To Our Website`;
+const dmode=document.getElementById('dark');
+dmode.onclick=function changeColor(){
+	document.body.style.backgroundColor='black';
+	document.body.style.color='white';
+}
+
+const ctime=document.getElementById('time');
+function clock(){
+let date=new Date();
+let time=date.toLocaleTimeString();
+ctime.innerText=time;
+}
+</script>
+</body>
+</html>
